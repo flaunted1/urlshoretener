@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Hazy — Premium URL Shortener</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <div class="bg-glow glow-1"></div>
+  <div class="bg-glow glow-2"></div>
+
+  <main class="container">
+    <nav class="nav">
+      <div class="logo">
+        hazy<span>.</span>
+      </div>
+
+      <a
+        class="nav-btn"
+        href="https://hazyport.netlify.app/"
+        target="_blank"
+      >
+        Admin
+      </a>
+    </nav>
+
+    <section class="hero">
+      <div class="badge">
+        Premium Minimal URL Shortener
+      </div>
+
+      <h1>
+        Make your links
+        <span>clean & powerful</span>
+      </h1>
+
+      <p>
+        Hazy helps you shorten, share, and manage links with a beautiful,
+        modern experience.
+      </p>
+
+      <div class="shortener-card">
+        <input
+          id="urlInput"
+          type="text"
+          placeholder="Paste your long URL here..."
+        />
+
+        <button id="shortenBtn">
+          Shorten URL
+        </button>
+      </div>
+
+      <div id="result" class="result hidden">
+        <p>Your shortened link</p>
+
+        <div class="result-box">
+          <input id="shortUrl" readonly />
+
+          <button id="copyBtn">
+            Copy
+          </button>
+        </div>
+      </div>
+
+      <div class="admin-card">
+        <p>
+          To know more about Admin
+        </p>
+
+        <a
+          href="https://hazyport.netlify.app/"
+          target="_blank"
+        >
+          Click here
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
