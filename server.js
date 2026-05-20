@@ -1,13 +1,20 @@
 const express = require('express');
+const path = require('path');
 const { nanoid } = require('nanoid');
 
 const app = express();
-const PORT = process.env.PORT || 3000;
+
+const PORT = process.env.PORT || 10000;
 
 const links = new Map();
 
 app.use(express.json());
-app.use(express.static('public'));
+
+app.use(express.static(path.join(__dirname, 'public')));
+
+app.get('/', (req, res) => {
+  res.sendFile(path.join(__dirname, 'public', 'index.html'));
+});
 
 app.post('/api/shorten', (req, res) => {
   const { url } = req.body;
