@@ -1,0 +1,14 @@
+{
+  "name": "hazy-shortener",
+  "version": "1.0.0",
+  "description": "Premium minimal URL shortener by Hazy",
+  "main": "server.js",
+  "scripts": {
+    "dev": "node server.js",
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2",
+    "nanoid": "^5.0.7"
+  }
+}
